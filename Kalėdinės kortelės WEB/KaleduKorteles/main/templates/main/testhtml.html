@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+   
+ 
+    {% load index %}
+    {% for i in "0"|ljust:KIEK %}
+        <p>{{A|index:forloop.counter0}}</p>
+        <p>{{B|index:forloop.counter0}}</p>
+        <p>{{C|index:forloop.counter0}}</p>
+        <hr>
+    {% endfor %}
+
+
+
+</head>
+</html>
