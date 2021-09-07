@@ -1,0 +1,94 @@
+{% extends 'main/Base.html'%}
+{% block title %}{{pavadinimas}}{% endblock %}
+{% block content %}
+<style>
+    .center {
+        text-align: center;
+        align-items: center; 
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .vygdyti[type=submit] {
+        width: 50%;
+        height: 60px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;       
+    }
+    .vygdyti[type=submit]:hover {
+        background-color: #3bc240;
+    }
+
+    .rinkimobutton[type=submit]{
+
+        width: 80%;
+        height: 70px;
+        background-color: #da3574;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 35px;
+    }
+    .rinkimobutton[type=submit]:hover {
+        background-color: #e74981;
+    }
+</style>
+{% if user.is_authenticated %}
+    <h1 style="text-align: right; size: 15px;">Liste žmonių: {{ZmoniuListas.getAllkiek}}&nbsp&nbsp</h1>
+    <hr>
+
+    {% include 'main/PrisijungusiuListas.html' %}
+
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="center">
+            <input type="text" placeholder="Įveskite vardą" name="vardas" id="vardolaukas" maxlength="255" required>
+            <select id="komanda" name="komanda">
+                <option value="none">NONE</option>
+                <option value="add">PRIDĖTI PRIE SĄRAŠO</option>
+                <option value="del">PAŠALINTI IŠ SĄRAŠO</option>
+                <option value="surastipora">PARODYTI PORA</option>
+                <option value="clear">IŠVALYTI SĄRAŠA (VARDO VIETOJE ĮVESKITE: TVIRTINU)</option>
+            </select>
+            <hr>
+            <div style="display: inline-block;  width: 100%;">
+                <h1 style="font-size: 30px;color: teal;">{{PRANESIMAS}}</h1>
+                <hr><br>
+                <input type="submit" class="vygdyti" value="Vygdyti" name="ButtonPress" id="vygdyti">
+                <br><br>
+            </div>
+        </div><br><hr><br>   
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="center" style="border: 1px">
+            <b><input class="rinkimobutton" type="submit" value="IŠRINKTI VISIEM PORAS" name="ButtonPress" id="Rinktiporas"></b>
+        </div>
+        
+    </form>
+    <br><br>
+{% endif %} 
+{% endblock %}
