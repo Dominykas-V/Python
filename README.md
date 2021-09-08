@@ -14,8 +14,8 @@ Dariau šią programą, kad išmokčiau, kaip reikia dinamiškai keisti nuotrauk
 Idėja buvo tokia: mes šeimoje dažnai keičiamės dovanomis per Kalėdas tačiau dėl karatino praėjusias Kalėdas to padaryti nepavyko. Todėl nusprendžiau padaryti kokią nors žmonių atrinkimo programėlę kur galėtume visi prisijungti ir išsirinkti kam pirkti dovanas. 
 Kaip minėjau kodas nebaigtas ir nėra komentarų, bet nenorėjau jų pridėti vien tik tam, kad kodas atrodytų „gražiau“ noriu, kad matytumėt kodo tvarka tokia kokia ji yra išties.
 
-Pagrindinis python kodas -> "\Kalėdines kortelčs WEB\KaleduKorteles\main\views.py"<br/>
-Visi html failai -> "\Kalėdines kortelčs WEB\KaleduKorteles\main\templates\main"<br/>
+Pagrindinis python kodas -> "\Kalėdines kortelės WEB\main\views.py"<br/>
+Visi html failai -> "\Kalėdines kortelėss WEB\main\templates\main"<br/>
 
 Norint įjungti puslapį reikia per cmd.exe atsidaryti „C:_____\Kalėdines kortelčs WEB\KaleduKorteles“ ir parašyti „python manage.py runserver“ tuomet prisijungti prie adreso kurį matysite lange (https://). 
 
