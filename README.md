@@ -10,7 +10,9 @@ Programa atrenka atsitiktinį žodį ir jums reikia jį atspėti.<br/>
 Dariau šią programą, kad išmokčiau, kaip reikia dinamiškai keisti nuotraukas lange ir kaip geriau manipuliuoti tekstu lenguose.<br/><br/>
 
 # Kalėdinės kortelės WEB
-Šios programos dar nebaigiau, bet ji tikrai yra didžiausia ką esu daręs praktiškai nuo 0. Šį kodą rašiau 5-6 dienas ir prieš tai nebuvau dirbęs su django frameworku ar html.<br/><br/>
+Šios programos dar nebaigiau, bet ji tikrai yra didžiausia ką esu daręs praktiškai nuo 0. Šį kodą rašiau 5-6 dienas ir prieš tai nebuvau dirbęs su django frameworku ar html.<br/>
+Šiam projektui naudojau python django framework.<br/>
+
 Idėja buvo tokia: mes šeimoje dažnai keičiamės dovanomis per Kalėdas tačiau dėl karatino praėjusias Kalėdas to padaryti nepavyko. Todėl nusprendžiau padaryti kokią nors žmonių atrinkimo programėlę kur galėtume visi prisijungti ir išsirinkti kam pirkti dovanas. 
 Kaip minėjau kodas nebaigtas ir nėra komentarų, bet nenorėjau jų pridėti vien tik tam, kad kodas atrodytų „gražiau“ noriu, kad matytumėt kodo tvarka tokia kokia ji yra išties.
 
