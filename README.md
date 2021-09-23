@@ -1,10 +1,10 @@
 # Tick_Tack_Toe
-Tick_Tack_Toe žaidimas padarytas su PyAutoGUI.<br/>
+Tick_Tack_Toe žaidimas padarytas su PySimpleGui.<br/>
 Čia buvo mano trečia Python programa. <br/>
 Galima žaisti vienas prieš vieną ir žmogus prieš kompiuterį.<br/><br/>
 
 # Kartuvės
-Paprastos kartuvės padarytos naudojant PyAutoGUI.<br/>
+Paprastos kartuvės padarytos naudojant PySimpleGui.<br/>
 Čia buvo mano ketvirta Python programa. <br/>
 Programa atrenka atsitiktinį žodį ir jums reikia jį atspėti.<br/>
 Dariau šią programą, kad išmokčiau, kaip reikia dinamiškai keisti nuotraukas lange ir kaip geriau manipuliuoti tekstu lenguose.<br/><br/>
